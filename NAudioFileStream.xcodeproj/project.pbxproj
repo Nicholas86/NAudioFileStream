@@ -15,6 +15,10 @@
 		F3E45A1E23363E1D00963776 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E45A1D23363E1D00963776 /* main.m */; };
 		F3E45A2823363E1D00963776 /* NAudioFileStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E45A2723363E1D00963776 /* NAudioFileStreamTests.m */; };
 		F3E45A3323363E1D00963776 /* NAudioFileStreamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E45A3223363E1D00963776 /* NAudioFileStreamUITests.m */; };
+		F3E45A4223363E4C00963776 /* NAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E45A4123363E4C00963776 /* NAudioFileStream.m */; };
+		F3E45A442336459300963776 /* deadwithlife.flac in Resources */ = {isa = PBXBuildFile; fileRef = F3E45A432336459300963776 /* deadwithlife.flac */; };
+		F3E45A462336471400963776 /* pf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3E45A452336471400963776 /* pf.mp3 */; };
+		F3E45A4923364C6E00963776 /* NParseAudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E45A4823364C6E00963776 /* NParseAudioData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		F3E45A2E23363E1D00963776 /* NAudioFileStreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NAudioFileStreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E45A3223363E1D00963776 /* NAudioFileStreamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAudioFileStreamUITests.m; sourceTree = "<group>"; };
 		F3E45A3423363E1D00963776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E45A4023363E4C00963776 /* NAudioFileStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAudioFileStream.h; sourceTree = "<group>"; };
+		F3E45A4123363E4C00963776 /* NAudioFileStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAudioFileStream.m; sourceTree = "<group>"; };
+		F3E45A432336459300963776 /* deadwithlife.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = deadwithlife.flac; sourceTree = "<group>"; };
+		F3E45A452336471400963776 /* pf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pf.mp3; sourceTree = "<group>"; };
+		F3E45A4723364C6E00963776 /* NParseAudioData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NParseAudioData.h; sourceTree = "<group>"; };
+		F3E45A4823364C6E00963776 /* NParseAudioData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NParseAudioData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +111,14 @@
 		F3E45A0D23363E1C00963776 /* NAudioFileStream */ = {
 			isa = PBXGroup;
 			children = (
+				F3E45A452336471400963776 /* pf.mp3 */,
+				F3E45A432336459300963776 /* deadwithlife.flac */,
 				F3E45A0E23363E1C00963776 /* AppDelegate.h */,
 				F3E45A0F23363E1C00963776 /* AppDelegate.m */,
+				F3E45A4723364C6E00963776 /* NParseAudioData.h */,
+				F3E45A4823364C6E00963776 /* NParseAudioData.m */,
+				F3E45A4023363E4C00963776 /* NAudioFileStream.h */,
+				F3E45A4123363E4C00963776 /* NAudioFileStream.m */,
 				F3E45A1123363E1C00963776 /* ViewController.h */,
 				F3E45A1223363E1C00963776 /* ViewController.m */,
 				F3E45A1423363E1C00963776 /* Main.storyboard */,
@@ -238,6 +254,8 @@
 				F3E45A1B23363E1D00963776 /* LaunchScreen.storyboard in Resources */,
 				F3E45A1823363E1D00963776 /* Assets.xcassets in Resources */,
 				F3E45A1623363E1C00963776 /* Main.storyboard in Resources */,
+				F3E45A442336459300963776 /* deadwithlife.flac in Resources */,
+				F3E45A462336471400963776 /* pf.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E45A4923364C6E00963776 /* NParseAudioData.m in Sources */,
 				F3E45A1323363E1C00963776 /* ViewController.m in Sources */,
+				F3E45A4223363E4C00963776 /* NAudioFileStream.m in Sources */,
 				F3E45A1E23363E1D00963776 /* main.m in Sources */,
 				F3E45A1023363E1C00963776 /* AppDelegate.m in Sources */,
 			);
@@ -438,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2PP5K6334;
 				INFOPLIST_FILE = NAudioFileStream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2PP5K6334;
 				INFOPLIST_FILE = NAudioFileStream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
