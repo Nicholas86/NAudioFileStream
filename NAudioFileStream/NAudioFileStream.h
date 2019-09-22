@@ -11,12 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class NAudioFileStream;
-@protocol NAudioFileStreamDelegate <NSObject>
-@required
-- (void)audioFileStream:(NAudioFileStream *)audioFileStream audioDataParsed:(NSArray *)audioData;
-@optional
-- (void)audioFileStreamReadyToProducePackets:(NAudioFileStream *)audioFileStream;
-@end
 
 typedef void(^ReadyToProducePackets)(NAudioFileStream *audioFileStream); /// 准备解析音频数据帧
 
@@ -33,6 +27,9 @@ typedef void(^AudioDataParsed)(NAudioFileStream *audioFileStream, NSArray *audio
 - (instancetype)initWithFilePath:(NSString *)path;
 
 - (void)parseData;
+
+/// 拖动进度条，需要到几分几秒，而我们实际上操作的是文件，即寻址到第几个字节开始播放音频数据
+- (void)seekToTime:(NSTimeInterval *)newSeekTime;
 
 @end
 
